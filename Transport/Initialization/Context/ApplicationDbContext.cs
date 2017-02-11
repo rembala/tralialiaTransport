@@ -7,6 +7,7 @@ using Transport.Core.Configurations;
 
 namespace Transport.Initialization.Context
 {
+    #region Application user
     public class ApplicationUser : IdentityUser
     {
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
@@ -17,7 +18,9 @@ namespace Transport.Initialization.Context
             return userIdentity;
         }
     }
+    #endregion
 
+    #region Applicaiton DB context
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
@@ -43,4 +46,6 @@ namespace Transport.Initialization.Context
             return new ApplicationDbContext();
         }
     }
+
+    #endregion
 }

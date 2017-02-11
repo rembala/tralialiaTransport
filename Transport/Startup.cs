@@ -1,5 +1,6 @@
 ﻿using Microsoft.Owin;
 using Owin;
+using TransportInitDB = Transport.Initialization.DatabaseInitialization;
 
 [assembly: OwinStartupAttribute(typeof(Transport.Startup))]
 namespace Transport
@@ -8,7 +9,7 @@ namespace Transport
     {
         public void Configuration(IAppBuilder app)
         {
-            new Transport.Initialization.DatabaseInitialization.Startup().ConfigureAuth(app);
+            new TransportInitDB.Startup().ConfigureAuth(app);
         }
     }
 }

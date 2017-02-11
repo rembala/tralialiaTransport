@@ -209,7 +209,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\HMTLHelperExtensions.cs" />
-    <Compile Include="Initialization\Context\IdentityModels.cs" />
+    <Compile Include="Initialization\Context\ApplicationDbContext.cs" />
     <Compile Include="Initialization\DatabaseInitialization\IdentityConfig.cs" />
     <Compile Include="Initialization\DatabaseInitialization\Startup.Auth.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
