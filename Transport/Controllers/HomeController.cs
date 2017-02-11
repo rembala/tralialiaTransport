@@ -1,4 +1,8 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
+using Transport.Core.Configurations;
+using Transport.Initialization.Context;
+using Transport.Models;
 
 namespace Transport.Controllers
 {
@@ -6,9 +10,16 @@ namespace Transport.Controllers
     {
         public ActionResult Index()
         {
-            ViewData["SubTitle"] = "Welcome in ASP.NET MVC 5 INSPINIA SeedProject ";
-            ViewData["Message"] = "It is an application skeleton for a typical MVC 5 project. You can use it to quickly bootstrap your webapp projects.";
-
+            using (ApplicationDbContext ctx = new ApplicationDbContext())
+            {
+                var result = ctx.TransportEnginePower.ToList();
+                ctx.TransportEnginePower.Add(
+                    new TransportEnginePowers()
+                    {
+                        TransportEngine = "2"
+                    });
+                ctx.SaveChanges();
+            }
             return View();
         }
 
