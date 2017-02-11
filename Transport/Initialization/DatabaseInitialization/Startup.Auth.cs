@@ -4,8 +4,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
-using Transport.Initialization.Context;
-using Transport.Models;
+using Transport.Initialization.DatabaseContext;
 
 namespace Transport.Initialization.DatabaseInitialization
 {

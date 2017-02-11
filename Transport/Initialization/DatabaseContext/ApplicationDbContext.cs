@@ -5,7 +5,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Transport.Core.Configurations;
 
-namespace Transport.Initialization.Context
+namespace Transport.Initialization.DatabaseContext
 {
     #region Application user
     public class ApplicationUser : IdentityUser
@@ -40,6 +40,10 @@ namespace Transport.Initialization.Context
             modelBuilder.Entity<IdentityRole>().ToTable("MyRoles", "transport");
         }
 
+        public virtual void Commit()
+        {
+            base.SaveChanges();
+        }
 
         public static ApplicationDbContext Create()
         {

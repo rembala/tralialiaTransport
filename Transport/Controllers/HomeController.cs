@@ -1,8 +1,7 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
 using Transport.Core.Configurations;
-using Transport.Initialization.Context;
-using Transport.Models;
+using Transport.Initialization.DatabaseContext;
 
 namespace Transport.Controllers
 {
