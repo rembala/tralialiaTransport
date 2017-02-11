@@ -8,8 +8,6 @@ namespace Transport.App_Start
 {
     internal class Bootstrapper
     {
-        private readonly IContainer m_Container;
-
         internal static void Initialize()
         {
             var builder = new ContainerBuilder();
