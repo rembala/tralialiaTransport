@@ -4,9 +4,9 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
-using Transport.Initialization.DatabaseContext;
+using Transport.Infrastructure.DatabaseContext;
 
-namespace Transport.Initialization.DatabaseInitialization
+namespace Transport.Infrastructure.DatabaseInitialization
 {
     public partial class Startup
     {

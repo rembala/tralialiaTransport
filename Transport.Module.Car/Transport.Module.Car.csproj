@@ -51,12 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database\someScripts.sql" />
+    <Content Include="SQLScripts\someScripts.sql" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Extensions\" />
-    <Folder Include="Services\" />
+    <Folder Include="CarExtensions\" />
+    <Folder Include="Service\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -64,6 +64,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Transport.Core\Transport.Core.csproj">
+      <Project>{fe1b47e4-ed2c-4060-91a5-724d73bf9dac}</Project>
+      <Name>Transport.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

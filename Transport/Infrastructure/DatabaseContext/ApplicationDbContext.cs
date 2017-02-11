@@ -5,7 +5,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Transport.Core.Configurations;
 
-namespace Transport.Initialization.DatabaseContext
+namespace Transport.Infrastructure.DatabaseContext
 {
     #region Application user
     public class ApplicationUser : IdentityUser

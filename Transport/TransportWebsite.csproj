@@ -208,14 +208,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Initialization\DatabaseContext\ApplicationDbContext.cs" />
-    <Compile Include="Initialization\DatabaseInitialization\IdentityConfig.cs" />
-    <Compile Include="Initialization\DatabaseInitialization\Startup.Auth.cs" />
-    <Compile Include="Initialization\DatabaseManagement\DbFactory.cs" />
-    <Compile Include="Initialization\DatabaseManagement\UnitOfWork.cs" />
-    <Compile Include="Initialization\DatabaseManagement\Disposable.cs" />
-    <Compile Include="Initialization\DatabaseManagement\IDbFactory.cs" />
-    <Compile Include="Initialization\DatabaseManagement\IUnitOfWork.cs" />
+    <Compile Include="Infrastructure\DatabaseContext\ApplicationDbContext.cs" />
+    <Compile Include="Infrastructure\DatabaseInitialization\IdentityConfig.cs" />
+    <Compile Include="Infrastructure\DatabaseInitialization\Startup.Auth.cs" />
+    <Compile Include="Infrastructure\DatabaseManagement\DbFactory.cs" />
+    <Compile Include="Infrastructure\DatabaseManagement\UnitOfWork.cs" />
+    <Compile Include="Infrastructure\DatabaseManagement\Disposable.cs" />
+    <Compile Include="Infrastructure\DatabaseManagement\IDbFactory.cs" />
+    <Compile Include="Infrastructure\DatabaseManagement\IUnitOfWork.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -341,7 +341,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

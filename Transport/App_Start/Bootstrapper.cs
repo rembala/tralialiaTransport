@@ -2,7 +2,7 @@
 using System.Web.Mvc;
 using Autofac;
 using Autofac.Integration.Mvc;
-using Transport.Initialization.DatabaseContext;
+using Transport.Infrastructure.DatabaseContext;
 
 namespace Transport.App_Start
 {

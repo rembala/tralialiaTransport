@@ -1,6 +1,6 @@
-﻿using Transport.Initialization.DatabaseContext;
+﻿using Transport.Infrastructure.DatabaseContext;
 
-namespace Transport.Initialization.DatabaseManagement
+namespace Transport.Infrastructure.DatabaseManagement
 {
     public class DbFactor : Disposable, IDbFactory
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Transport.Initialization.DatabaseManagement
+namespace Transport.Infrastructure.DatabaseManagement
 {
     public class Disposable : IDisposable
     {

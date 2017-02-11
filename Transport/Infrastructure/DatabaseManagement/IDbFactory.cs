@@ -1,7 +1,7 @@
 ﻿using System;
-using Transport.Initialization.DatabaseContext;
+using Transport.Infrastructure.DatabaseContext;
 
-namespace Transport.Initialization.DatabaseManagement
+namespace Transport.Infrastructure.DatabaseManagement
 {
     public interface IDbFactory : IDisposable
     {

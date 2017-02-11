@@ -90,21 +90,12 @@
     <Compile Include="Validation\ValidationErrorRow.cs" />
     <Compile Include="Validation\ValidationResult.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Repository\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Transport.Module.Car\Transport.Module.Car.csproj">
-      <Project>{bf7a56db-ab31-4db6-b5cb-e1f4df6008a6}</Project>
-      <Name>Transport.Module.Car</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

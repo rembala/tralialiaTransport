@@ -5,7 +5,7 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using Transport.Initialization.DatabaseContext;
+using Transport.Infrastructure.DatabaseContext;
 using Transport.Models;
 
 namespace Transport.Controllers
