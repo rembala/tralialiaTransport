@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Transport.Core.Configurations;
 
 namespace Transport.Models
 {
@@ -21,9 +22,22 @@ namespace Transport.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("TransportContext", throwIfV1Schema: false)
         {
         }
+        public DbSet<TransportEnginePowers> TransportEnginePower { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<ApplicationUser>().ToTable("MyUsers", "transport").Property(p => p.Id).HasColumnName("UserId");
+            modelBuilder.Entity<IdentityUserRole>().ToTable("MyUserRoles", "transport");
+            modelBuilder.Entity<IdentityUserLogin>().ToTable("MyUserLogins", "notUsed");
+            modelBuilder.Entity<IdentityUserClaim>().ToTable("MyUserClaims", "notUsed");
+            modelBuilder.Entity<IdentityRole>().ToTable("MyRoles", "transport");
+        }
+
 
         public static ApplicationDbContext Create()
         {

@@ -1,0 +1,9 @@
+C:\Users\ARTA\documents\visual studio 2015\Projects\Transport\Transport.Module.Car\bin\Debug\Transport.Module.Car.dll.config
+C:\Users\ARTA\documents\visual studio 2015\Projects\Transport\Transport.Module.Car\bin\Debug\Transport.Module.Car.dll
+C:\Users\ARTA\documents\visual studio 2015\Projects\Transport\Transport.Module.Car\bin\Debug\Transport.Module.Car.pdb
+C:\Users\ARTA\documents\visual studio 2015\Projects\Transport\Transport.Module.Car\bin\Debug\EntityFramework.dll
+C:\Users\ARTA\documents\visual studio 2015\Projects\Transport\Transport.Module.Car\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ARTA\documents\visual studio 2015\Projects\Transport\Transport.Module.Car\bin\Debug\EntityFramework.xml
+C:\Users\ARTA\documents\visual studio 2015\Projects\Transport\Transport.Module.Car\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ARTA\documents\visual studio 2015\Projects\Transport\Transport.Module.Car\obj\Debug\Transport.Module.Car.dll
+C:\Users\ARTA\documents\visual studio 2015\Projects\Transport\Transport.Module.Car\obj\Debug\Transport.Module.Car.pdb

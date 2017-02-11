@@ -8,7 +8,7 @@ namespace Transport
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
+            new Transport.Initialization.DatabaseInitialization.Startup().ConfigureAuth(app);
         }
     }
 }
