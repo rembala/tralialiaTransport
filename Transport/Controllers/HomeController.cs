@@ -1,11 +1,12 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
 using Transport.Core.Configurations;
+using Transport.Core.Infrastructure;
 using Transport.Infrastructure.DatabaseContext;
 
 namespace Transport.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {
