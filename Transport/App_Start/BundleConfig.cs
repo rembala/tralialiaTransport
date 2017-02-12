@@ -4,6 +4,7 @@ namespace Transport
 {
     public class BundleConfig
     {
+
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
@@ -41,7 +42,7 @@ namespace Transport
 
             // Font Awesome icons
             bundles.Add(new StyleBundle("~/font-awesome/css").Include(
-                      "~/fonts/font-awesome/css/font-awesome.min.css", new CssRewriteUrlTransform()));
+                      "~/fonts/font-awesome/css/font-awesome.css", new CssRewriteUrlTransform()));
 
         }
     }
