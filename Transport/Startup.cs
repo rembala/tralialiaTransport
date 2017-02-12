@@ -1,6 +1,6 @@
 ﻿using Microsoft.Owin;
 using Owin;
-using TransportInitDB = Transport.Initialization.DatabaseInitialization;
+using TransportInitDB = Transport.Infrastructure.DatabaseInitialization;
 
 [assembly: OwinStartupAttribute(typeof(Transport.Startup))]
 namespace Transport

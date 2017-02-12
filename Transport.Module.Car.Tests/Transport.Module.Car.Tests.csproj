@@ -73,7 +73,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Transport.Core\Transport.Core.csproj">
+      <Project>{fe1b47e4-ed2c-4060-91a5-724d73bf9dac}</Project>
+      <Name>Transport.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Transport\TransportWebsite.csproj">
+      <Project>{1437e1cc-a85a-422b-b128-11c6327d883c}</Project>
+      <Name>TransportWebsite</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

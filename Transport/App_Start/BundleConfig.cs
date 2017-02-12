@@ -4,6 +4,7 @@ namespace Transport
 {
     public class BundleConfig
     {
+
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
@@ -19,8 +20,10 @@ namespace Transport
                       "~/Scripts/vendors/bootstrap.min.js"));
 
             // Inspinia script
-            bundles.Add(new ScriptBundle("~/bundles/inspinia").Include(
-                      "~/Scripts/app/Transport.js"));
+            bundles.Add(new ScriptBundle("~/bundles/appScripts").Include(
+                      "~/Scripts/app/IniJQEvents.js",
+                      "~/Scripts/app/AngularConfiguration/Core.js",
+                      "~/Scripts/app/AngularConfiguration/Init.js"));
 
             // SlimScroll
             bundles.Add(new ScriptBundle("~/plugins/slimScroll").Include(
@@ -33,6 +36,9 @@ namespace Transport
             bundles.Add(new ScriptBundle("~/plugins/pace").Include(
                       "~/Scripts/plugins/pace/pace.min.js"));
 
+            bundles.Add(new ScriptBundle("~/plugins/angular").Include(
+                      "~/Scripts/vendors/angular.min.js"));
+
             // CSS style (bootstrap/inspinia)
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.min.css",
@@ -41,7 +47,7 @@ namespace Transport
 
             // Font Awesome icons
             bundles.Add(new StyleBundle("~/font-awesome/css").Include(
-                      "~/fonts/font-awesome/css/font-awesome.min.css", new CssRewriteUrlTransform()));
+                      "~/fonts/font-awesome/css/font-awesome.css", new CssRewriteUrlTransform()));
 
         }
     }
